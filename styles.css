@@ -1,0 +1,108 @@
+.andando{
+   
+    border: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 70%;
+    animation: Walk 10s infinite linear;
+
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(0, 0, 0), rgb(150, 148, 148))
+}
+.title{
+    font-size: 80px;
+    color: rgb(247, 247, 247);
+    animation: Cep 10s infinite linear  ;
+}
+@keyframes Cep {
+    from{
+        transform: rotateX(90deg);
+
+    }
+    to{
+        transform: rotateX(0deg);
+
+    }
+}
+@keyframes Walk{
+    from{
+        margin-right: 100%;
+
+    }
+    to{
+        margin-right: -100%;
+
+    }
+
+}
+.containerInput{
+    background-color: rgb(110, 20, 98);
+    padding: 15px;
+    margin: 54px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px white;
+}
+.container input{
+    background-color: transparent;
+    border:0;
+    font-size: 19px;
+    color: rgb(223, 223, 223);
+    outline: none;
+    margin-right: 10px;
+}
+.containerInput input::placeholder{
+    color: aliceblue;
+}
+
+.Search{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.Search:hover{
+    transform: scale(1.5);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255) ;
+    width: 450px;
+    border-radius: 20px;
+}
+.main h2{
+    margin: 16px 0;
+    font-size: 40px;
+
+}
+.main span{
+    margin-bottom: 16px;
+    font-weight:bold;
+}
+
+@media(max-width: 620px){
+    .title{
+        font-size: 60px;
+    }
+    .main h2{
+        font-size: 20px;
+    }
+    main{
+        width: 80%;
+        min-height: 250px;
+    }
+}
